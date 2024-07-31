@@ -12,7 +12,7 @@ export default function Contact({ contact }) {
 
   return (
     <div className={css.contactListItem}>
-      <p>
+      <p className={css.contactName}>
         <FaUser />
         {contact.name}
       </p>
@@ -20,7 +20,7 @@ export default function Contact({ contact }) {
         <BsFillTelephoneFill />
         {contact.number}
       </p>
-      <button onClick={handleDelete} type="button">
+      <button className={css.btn} onClick={handleDelete} type="button">
         Delete
       </button>
     </div>
